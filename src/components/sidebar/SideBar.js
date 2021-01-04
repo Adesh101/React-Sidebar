@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 import SubMenu from "./SubMenu";
 
-const SideBar = ({ isOpen }) => (
+const SideBar = () => (
   <div className="sidebar is-open">
     <div className="sidebar-header">
       <span color="info" style={{ color: "#ffff" }}>
@@ -16,18 +16,18 @@ const SideBar = ({ isOpen }) => (
       <Nav vertical className="list-unstyled pb-3">
         <SubMenu title="Home" items={submenus[0]} />
         <NavItem>
-          <NavLink tag={Link} to={"/about"}>  
+          <NavLink tag={Link} to={"/about"}>
             About
           </NavLink>
         </NavItem>
         <SubMenu title="Pages" items={submenus[1]} />
         <NavItem>
-          <NavLink tag={Link} to={"/pages"}>  
+          <NavLink tag={Link} to={"/pages"}>
             Portfolio
           </NavLink>
         </NavItem>
         <NavItem>
-          <NavLink tag={Link} to={"/faq"}>    
+          <NavLink tag={Link} to={"/faq"}>
             FAQ
           </NavLink>
         </NavItem>

@@ -7,19 +7,15 @@ import Cards from "./components/cards/Cards";
 import "./App.css";
 
 const App = () => {
-
-  const sidebarIsOpen = useState(true);
-  
   return (
     <>
-    <Router>
-      <div className="App wrapper">
-        <SideBar isOpen={sidebarIsOpen} />
-        <Content sidebarIsOpen={sidebarIsOpen} />
-        <Cards />
-      </div>
-    </Router>
-  </>
+      <Router>
+        <div className="App wrapper">
+          <SideBar />
+          <Content />
+        </div>
+      </Router>
+    </>
   );
 };
 

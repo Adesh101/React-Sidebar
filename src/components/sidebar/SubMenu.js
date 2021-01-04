@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const SubMenu = (props) => {
   const [collapsed, setCollapsed] = useState(true);
   const toggle = () => setCollapsed(!collapsed);
-  const { icon, title, items } = props;
+  const { title, items } = props;
 
   return (
     <div>

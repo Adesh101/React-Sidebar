@@ -1,31 +1,93 @@
 import React, { Component } from "react";
+import { Container, Row, Col } from "reactstrap";
+import {
+  Card,
+  CardImg,
+  CardText,
+  CardBody,
+  CardTitle,
+  CardSubtitle,
+  Button,
+} from "reactstrap";
 
 const About = () => {
   const data = [
     {
-      name: "AppleAbout",
-      image_url:
-        "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone11-select-2019-family?wid=882&hei=1058&fmt=jpeg&qlt=80&op_usm=0.5,0.5&.v=1567022175704",
-      price: "1000$",
+      name: "Apple About",
+      price: "10001$",
     },
     {
-      name: "Apple",
-      image_url:
-        "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone11-select-2019-family?wid=882&hei=1058&fmt=jpeg&qlt=80&op_usm=0.5,0.5&.v=1567022175704",
-      price: "1000$",
+      name: "Apple2",
+      price: "10002$",
     },
     {
-      name: "Apple",
-      image_url:
-        "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone11-select-2019-family?wid=882&hei=1058&fmt=jpeg&qlt=80&op_usm=0.5,0.5&.v=1567022175704",
-      price: "1000$",
+      name: "Apple3",
+      price: "10003$",
     },
   ];
 
   return (
     <>
-      From About
-      {console.log(data[0])}
+      <div className="my-container">
+        <Container>
+          <div className="header">Today's Deals</div>
+          <Row className="card-boundary">
+            <Col md={3}>
+              <Card className="my-content">
+                <CardImg
+                  top
+                  width="100%"
+                  src="/images/download"
+                  alt="Card image cap"
+                />
+                <CardBody>
+                  <CardTitle tag="h5">Card title</CardTitle>
+                  <CardText>
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </CardText>
+                </CardBody>
+              </Card>
+            </Col>
+            <Col md={3}>
+              <Card className="my-content">
+                <CardImg
+                  top
+                  width="100%"
+                  src="/images/download"
+                  alt="Card image cap"
+                />
+                <CardBody>
+                  <CardTitle tag="h5">Card title</CardTitle>
+                  <CardText>
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </CardText>
+                </CardBody>
+              </Card>
+            </Col>
+          </Row>
+          <Row className="card-boundary">
+            <Col md={3}>
+              <Card className="my-content">
+                <CardImg
+                  top
+                  width="100%"
+                  src="/images/download"
+                  alt="Card image cap"
+                />
+                <CardBody>
+                  <CardTitle tag="h5">Card title</CardTitle>
+                  <CardText>
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </CardText>
+                </CardBody>
+              </Card>
+            </Col>
+          </Row>
+        </Container>
+      </div>
     </>
   );
 };
